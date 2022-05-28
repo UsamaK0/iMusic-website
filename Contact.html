@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+  <title>iMusic!</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">iMusic</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/About.html">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="/Hip Hop Music.Html">Music Categories</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/Contact.html">Contact Us</a>
+        </li>
+
+
+      </ul>
+
+
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      <div class="mx-2">
+        <button class="btn btn-danger" data-toggle="modal" data-target="#LogInModal">Log In</button>
+        <button class="btn btn-danger" data-toggle="modal" data-target="#SignUpModal">Sign Up</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Log In Modal -->
+  <div class="modal fade" id="LogInModal" tabindex="-1" aria-labelledby="LogInModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="LogInModalLabel">Welcome to iMusic</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"
+                aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control aria-hidden" id="exampleInputPassword1">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Let me Log In</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Log In</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Sign Up Modal -->
+  <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="SignUpModalLabel">Sign Up For iMusic</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+
+            <div class="row">
+              <div class="col">
+                <label for="exampleInputEmail1">First Name</label>
+                <input type="text" class="form-control" placeholder="">
+              </div>
+              <div class="col">
+                <label for="exampleInputEmail1">Last Name</label>
+                <input type="text" class="form-control" placeholder="">
+              </div>
+            </div>
+            <div class="form-group my-2">
+              <label for="exampleInputEmail1">Father's Name</label>
+              <input type="Name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Select Your Music Carear</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option></option>
+                <option>Sufi Music</option>
+                <option>Rap Music</option>
+                <option>Classic Music</option>
+                <option>English Music</option>
+                <option>Creator</option>
+                <option>Others</option>
+              </select>
+            </div>
+
+            <div class="form-group my-2">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="name@example.com"
+                aria-describedby="emailHelp">
+            </div>
+
+            <div class="form-group my-2">
+              <label for="exampleInputEmail1">Password</label>
+              <input type="password" class="form-control aria-hidden" id="exampleInputPassword1">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputPassword1">Confirm Password</label>
+              <input type="password" class="form-control aria-hidden" id="exampleInputPassword1">
+            </div>
+
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Let me Sign In</label>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Sign Up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="contaner my-4">
+    <div class="justify-content-center align-items-center row mb-2">
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h2>Contact Us</h2>
+
+            <form>
+              <div class="form-group">
+                <label for="mb-2">Name</label>
+                <input type="name" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="mb-2">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Select Your Query</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option></option>
+                  <option>Sufi Music</option>
+                  <option>Rap Music</option>
+                  <option>Classic Music</option>
+                  <option>English Music</option>
+                  <option>Creator's Music</option>
+                </select>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-sm-6">Are You a Member</div>
+                <div class="col-sm-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                    <label class="form-chech-label" for="gridCheck1">
+                      Yes
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-sm-6">Are You a Listner</div>
+                <div class="col-sm-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2">
+                    <label class="form-chech-label" for="gridCheck2">
+                      Yes
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-sm-6">Are You a Creator</div>
+                <div class="col-sm-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck3">
+                    <label class="form-chech-label" for="gridCheck3">
+                      Yes
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="form-group col-md-12">
+                <label for="exampleFormControlTextarea1">What is Your Concern</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container my-4">
+      <div class="justify-content-center align-items-center row mb-2">
+        <div class="col-md-6">
+          <p class="float-right"><a href="#">Back to top</a></p>
+          <p>© 2020-2021 iCoder, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+  </div>
+  </div>
+  </div>
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+      -->
+</body>
+
+</html>
